@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>and-collection3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img-400 {
+            width: 300px;
+            height: 400px;
+            margin-left : auto;
+            margin-right : auto;
+            /* margin-left: -20px; */
+
+        }
+        .items{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img-400 img {
+            width:100%;
+            height: 100%;
+        }
+        .items h2 {
+            font-size: 0.8rem;
+            font-weight: bold;
+            font-family:"futura-pt",sans-serif;
+            color: rgb(146, 146, 146);
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .section-title h2{
+            font-size: 2.4rem;
+            font-family: "futura-pt",sans-serif;
+            font-weight: 700;
+            
+        }
+        .items p {
+            font-size: 12px;
+            font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "kozuka-mincho-pr6n", "HG明朝E", "MS P明朝", "ＭＳ 明朝", serif;
+            color:rgb(129, 129, 129);
+            font-weight: 600;
+            text-align: center;
+            padding-top: 15px;
+            /* line-height: 40px; */
+        }
+        .change{
+               line-height: 20px;
+        }
+
+        .logo {
+            max-width:70% ;
+            min-width: 150px;
+        }
+        .text-banner2 {
+            max-width: 100%;
+            min-width: 30%;
+            background: rgba(199, 196, 196, 0.288) url(./images/A.svg) no-repeat center 50%;
+        }
+        .text-banner2 h1{
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 2.5rem;
+            font-weight: bold;
+            padding-top:25px;
+            padding-bottom: 25px;
+        }
+        .text-banner2 p{
+            font-family: 'Noto Serif JP', serif;
+            text-align:center;
+            font-size:1rem;
+            line-height: 2rem;
+            font-weight: 300;
+            color: black;
+        }
+
+        .jpEN P {
+            font-size:0.5rem;
+            font-weight: bold;
+            padding-bottom: 15px;
+
+        }
+        
+        .banner{
+            top: 400px; 
+        }
+        .carousel-inner {
+            padding-top: 80px;
+        }
+
+        .figure{
+            width: 50%;
+            object-fit: cover;
+        }
+
+        dt{
+            float: left;
+        }
+        dd{
+            margin-left: 80px;
+        }
+        .info {
+            position: relative;
+        }
+        .info h3{
+            padding:0 10px;
+            font-size:1.2rem;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: bold;
+            white-space:nowrap;
+        } 
+        .info ul{
+            padding: 10px;
+        }
+        .info p{
+            padding:0 10px;
+        }
+        .store-info h2{
+            font-size: 1.5rem;
+            font-family:  "futura-pt",sans-serif;
+        }
+        /* .map{
+            padding-left: 25%;
+            align-content: flex-start;
+        } */
+        /* .maps{
+            padding-right: 20% ;
+        } */
+        .info .map img {
+            width: 22px;
+        }
+        .section-title{
+            font-size:2rem;
+            font-weight: bold;
+        }
+        .store-infomation{
+            padding: 40px  0;
+        }
+        .contact {
+            text-align:center;
+            font-size:1.5rem;
+            padding:60px;
+            font-weight:bold;
+            align-items: center;        
+        }
+        .contact-box{
+            /* display: flex; */
+            width: auto;
+            height: 300px;
+            background-color: black;
+            /* text-align:center; */
+            margin-bottom: 50px;
+            
+        }
+        .contact-store{
+            /* display:absolute; */
+            font-size:1.5rem;
+            padding:40px;
+            padding-bottom: 10px;
+            color:#fff;
+            text-align: center;
+        }
+        .small{
+            padding-bottom: 40px;
+            font-size: 0.8rem;
+            color:#fff;
+            text-align: center;
+            
+        }
+        .recruitment{
+            padding-bottom:10px;
+        }
+        .contact-us{
+            /* display:absolute; */
+            text-align: center;
+        }
+        .contact-us a{
+            border: 1px solid #fff;
+            color:#fff;
+            text-decoration:none;
+            padding: 15px 45px;
+
+        }
+
+        .contact-us a:hover{
+            color:rgba(83, 83, 83, 0.836);
+        }
+        .corporation{
+            padding-top:34px;
+            color: #fff;
+        }
+        .oboend{
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+        .siyou{
+            padding-bottom:10px ;
+        }
+        .obo{
+            padding-bottom: 30px;
+        }
+        .obo a {
+           padding: 10px 40px;
+        }
+        .end a{
+            padding: 10px 34px;
+        }
+        .hojinn{
+            margin-bottom: 50px;
+        }
+
+
+        footer {
+            max-width: 100%;
+            min-width: 30%;
+            background: rgb(0, 0, 0) ;
+            
+        }
+        .botton-logo{
+            max-width: 15%;
+            min-width: 200px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+
+        }
+        .sns-logo{
+            color:#fff;
+            font-size: 50px;
+        }
+        .footer-logo {
+            border-bottom: 1px solid #fff;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+        .nav-home{           
+            font-size:1rem;
+            width: 350px;
+            height: auto;
+        }
+        .footer-botton a{
+            line-height:40px;
+            text-decoration: none;
+            color:#fff;
+        }
+        .footer-botton a:hover{
+            color:rgba(83, 83, 83, 0.836);
+        }
+        .copy{
+            margin:0;
+            padding-bottom: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <div class="navbar-brand w-25 p-3"  href="#">
+            <img class="logo" src="./images/andcollection.svg" alt="">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">ARTISTS <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link" href="#">NEWS</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link" href="#">STORE INFO</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            <li class="nav-item text-right">
+                <a class="nav-link" href="#">ONLINE STORE</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+    <div class="container-fluid p-0">
+        <div class="banner">
+            <div id="carouselExampleControls" class="carousel slide mt-10" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./images/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./images/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./images/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="text-banner2 align-middle">
+            <h1>ARTとDESIGNで<br>自分らしいライフスタイルを創造</h1>
+            <p>ライフスタイルがより豊かになる空間<br>自分が見つかる空間</p>
+            <p>現代アート、家具、デザインアイテムを通じて<br>暮らしを楽しむ</p>
+            <p>ライフスタイルを提案するショップです。</p>
+            <p>AND COLLECTIONで出会った<br>ARTやアイテムで</p>
+            <p>より豊かな時間を過ごせるよう、</p>
+            <p>世界中からセレクトしたコレクションを<br>発信していきます。</p>
+            <div class="jpEN"> 
+                <p>JP/EN</p>
+            </div>
+           
+            
+            
+        </div>
+    </div>
+
+        
+    <div class="container">
+        <article class="activity align-items-center">
+            <h2 class="section-title" >NEWS</h2>
+            <div class="row section news">
+                <div class="col-sm-6 col-md-4">
+                    <div class="items">
+                        <h2>MAY 31, 2021</h2>
+                        <div class="img-400">
+                            <img src="./images/営業時間変更2021.jpg" alt="">
+                        </div>
+                        <p>【営業時間変更のご案内】2021年6月1日~</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="items">
+                        <h2>JUL 2, 2021</h2>
+                        <div class="img-400">
+                            <img src="./images/HP画像大丸札幌.jpg" alt="">
+                        </div>
+                        <p>【イベント】POP-UP STORE 大丸札幌店 7月開催</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="items">
+                        <h2>JUN 4, 2021</h2>
+                        <div class="img-400">
+                            <img src="./images/HP画像髙島屋大阪202106-1.jpg" alt="">
+                        </div>
+                        <p>【イベント】POP-UP STORE 髙島屋大阪店 開催</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="items">
+                        <h2>MAR 29, 2021</h2>
+                        <div class="img-400">
+                            <img src="./images/HP画像2GRAND-OPENING2021R5.jpg" alt="">
+                        </div>
+                        <p>【リニューアルオープンのお知らせ】</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="items">
+                        <h2>JUL 2, 2021</h2>
+                        <div class="img-400">
+                            <img src="./images/HP画像-2Sakura-HanamiR3.jpg" alt="">
+                        </div>
+                        <p class="change">【イベント】個展『Sakura Hanami』by<br>Campbell La Pun</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="items">
+                        <h2>MAR 5, 2021</h2>
+                        <div class="img-400">
+                            <img src="./images/HP画像大丸梅田202103-2.jpg" alt="">
+                        </div>
+                        <p>【イベント】POP-UP STORE 大丸梅田店 開催</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="store-info">
+            <h2 class="section-title store-infomation">STORE INFORMATION</h2>
+            <div class="row section store">
+                <div class="col-sm-12 col-md-6">
+                    <div class="store1">
+                        <figure class="figure img-fluid w-100">
+                            <img class="omote w-100 " src="./images/store_new_01.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="store1">
+                        <div class="info">
+                            <div class="titlemap d-flex justify-content-between">
+                                <h3>AND COLLECTION 表参道本店</h3> 
+                                <div class="map">
+                                    <img  src="./images/map.svg" alt="">
+                                </div>                          
+                            </div>
+                            <div>
+                                <p>Contemporary Art Gallery</p>
+                            </div>
+                            <ul>
+                                <il>
+                                    <dt>ADDRESS</dt>
+                                    <dd>
+                                        <a href="#">
+                                        東京都渋谷区神宮前 4 丁目 12 番 10 号 表参道ヒルズ 本館 B2F
+                                        </a>
+                                    </dd>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>OPEN</dt>
+                                        <dd> 11:00 - 20:00</dd>
+                                    </dl>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>TEL</dt>
+                                        <dd>03-6447-1775</dd>
+                                    </dl>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>ACCESS</dt>
+                                        <dd>東京メトロ銀座線 / 千代田線 / 半蔵門線 表参道駅 A2 出口 徒歩 2 分</dd>
+                                    </dl>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>ITEM</dt>
+                                        <dd>アート</dd>
+                                    </dl>
+                                </il>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="store2">
+                        <figure class="figure img-fluid w-100">
+                            <img class="shinjuku w-100" src="./images/store_new_02.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="store2">
+                        <div class="info">
+                            <div class="titlemap d-flex justify-content-between">
+                                <h3 class="maps">&Collection 銀座店</h3>
+                                <div class="map">
+                                    <img src="./images/map.svg" alt="">
+                                </div>      
+                            </div>
+                            <div>
+                                <p>Art & Interior</p>
+                            </div>
+                            <ul>
+                                <il>
+                                    <dt >ADDRESS</dt>
+                                    <dd>
+                                        <a href="#">
+                                        東京都中央区銀座5-2-1 東急プラザ銀座 4F
+                                        </a>
+                                    </dd>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>OPEN</dt>
+                                        <dd>11:00 - 21:00</dd>
+                                    </dl>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>TEL</dt>
+                                        <dd>03-6274-6776</dd>
+                                    </dl>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>ACCESS</dt>
+                                        <dd>JR・東京メトロ・都営地下鉄 銀座駅 徒歩1分</dd>
+                                    </dl>
+                                </il>
+                                <il>
+                                    <dl>
+                                        <dt>ITEM</dt>
+                                        <dd>コンテンポラリーアート、インテリア雑貨など</dd>
+                                    </dl>
+                                </il>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+    </div>
+    <article>
+        <div class="section-title contact">CONTACT</div>
+        <div class="container justify-content-between">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-6 col-md-4 contact-position">
+                    <div class="contact-box">
+                        <div class="contact-inner">
+                            <p class="contact-store">
+                                店舗･商品に関するお問い合わせ
+                            </p>
+                            <p class="small">
+                                PRODUCTS/STORE INQUIRIES
+                            </p>
+                            <div class="contact-us">
+                                <a class="" href="#">CONTACT US</a>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 contact-position">
+                    <div class="contact-box">
+                        <div class="contact-inner">
+                            <p class="contact-store hojinn">
+                                法人様向けお問い合わせ
+                            </p>
+                            <p class="small">
+                                CORPORATION INQUIRIES
+                            </p>
+                            <div class="contact-us">
+                                <a class="" href="#">CONTACT US</a>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 contact-position">
+                    <div class="contact-box">
+                        <div class="contact-inner">
+                            <p class="contact-store siyou">
+                                採用に関するお問い合わせ
+                            </p>
+                            <p class="small recruitment">
+                                RECRUITMENT
+                            </p>
+                            <div class="contact-us oboend">
+                                <div class="obo"><a class="obo-link" href="#">募集要項</a></div>
+                                <div class="end"><a href="#">エントリー</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </article>
+    <footer>
+        <div class="container-fluid">
+                <div class="footer-top">
+                    <div class="footer-logo  d-flex justify-content-between">
+                        <img class="botton-logo" src="./images/andcollection_w.svg" alt="">
+                        <div class="sns-logo">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                
+                    </div>
+                </div>
+                <nav class="footer-botton d-flex">
+                    <ul class="nav-home col-sm-6 col-md-4">
+                        <il>
+                            <a href="#">ホーム</a><br>
+                        </il>
+                        <il>
+                            <a href="#">会社情報</a><br>
+                        </il>
+                        <il>
+                            <a href="#">店舗情報</a><br>
+                        </il>
+                        <il>
+                            <a href="#">- &Collection 店舗</a><br>
+                        </il>
+                        <il>
+                            <a href="#">- 法人向けアートコーディネート</a><br>
+                        </il>
+                        <il>
+                            <a href="#">- スペースレンタル</a><br>
+                        </il>
+                    </ul>
+                    <ul class="nav-online col-sm-6 col-md-4">
+                        <il><a href="#">ONLINE STORE</a><br></il>
+                        <il><a href="#">アーティスト情報</a><br></il>
+                        <il><a href="#">お知らせ</a><br></il>
+                    </ul>
+                    <ul class="nav-info col-sm-6 col-md-4">
+                        <il>
+                            <a href="#">お問い合わせ</a><br>
+                        </il>
+                        <il>
+                            <a href="#">- 店舗・商品に関するお問い合わせ</a><br>
+                        </il>
+                        <il>
+                            <a href="#">- 法人様向けお問い合わせ</a><br>
+                        </il>
+                        <il>
+                            <a href="#">採用情報</a><br>
+                        </il>
+                        <il>
+                            <a href="#">プライバシーポリシー</a><br>
+                        </il>
+                    </ul>
+                </nav>
+                <p class="copy text-light text-center">Copyright © 2021 Clue Co.,Ltd. all rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
